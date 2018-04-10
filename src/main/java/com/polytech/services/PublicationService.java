@@ -1,5 +1,6 @@
 package com.polytech.services;
 
+import com.polytech.persistence.InMemoryStoryRepository;
 import com.polytech.persistence.StoryRepository;
 
 
@@ -12,6 +13,7 @@ public class PublicationService {
     }
 
     public void share(Story content) {
+
         storyRepository.save(content);
     }
 }
